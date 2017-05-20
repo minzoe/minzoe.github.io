@@ -6,17 +6,15 @@
     <title>Wireframe | Franklin | Frontend Development</title>
     <meta name="description" content="Wireframe for the Franklin weather page">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="main.css" >
+    <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <h1>&#9856;  &#9861; Feeling Lucky?</h1>
-        </div>
         <div class="title">
-            <h3>Local Weather</h3>
+            <h1><span>&#9856;</span><span>&#9861;</span> Feeling Lucky?</h1>
+            <h1>Local Weather</h1>
         </div>
         <hr>
         <nav>
@@ -41,53 +39,58 @@
         <hr>
     </header>
     <main>
-        <!-- Current Conditions Div -->
-        <div class="current">
-            <div class="datahead">
-                <p>&#x2600;</p>
-                <h3>Current Conditions</h3>
-            </div>
-            <div class="databody">
-                <h4>Wind</h4>
-                <p>1-5 MPH</p>
-                <p>Southwest</p>
-                <h4>Precipitation</h4>
-                <p>0 in</p>
-            </div>
-        </div>
         <!-- Franklin Weather -->
-        <div class="franklin">
-            <div class="datahead">
-                <p>&#x2600;</p>
+        <div class="town">
+            <div class="townhead">
+                <p class="iconhide">&#x2600;</p>
                 <h3>Franklin, ID</h3>
             </div>
-            <div class="databody">
-                <h4>79</h4>
-                <p>&#x26C5;</p>
+            <div class="townbody">
+                <p>79</p>
+                <span class="subtown"><p>&#x26C5;</p>
                 <p>90/66</p>
+                </span>
             </div>
-            <h3>Sunny</h3>
+            <div class="townweather">
+                <h3>Sunny</h3>
+            </div>
         </div>
+        <!-- Current Conditions Div -->
+        <div class="current">
+            <div class="currenthead">
+                <p class="iconhide">&#x2600;</p>
+                <h3>Current Conditions</h3>
+            </div>
+            <div class="currentbody">
+                <p>Wind:</p>
+                <p>1-5 MPH <br>Southwest</p>
+                <p>Precipitation:</p>
+                <p>0in</p>
+            </div>
+        </div>
+
         <!-- Hourly Forcast -->
         <div class="hourly">
-            <div class="datahead">
-                <p>&#x2600;</p>
+            <div class="hourhead">
+                <p class="iconhide">&#x2600;</p>
                 <h3>Hourly Forecast</h3>
             </div>
-            <div class="databody">
-                <h4>8:00 AM : 74</h4>
-                <h4>9:00 AM : 77</h4>
-                <h4>10:00 AM : 79</h4>
-                <h4>11:00 AM : 81</h4>
-                <h4>12:00 PM : 84</h4>
-                <h4>1:00 PM : 86</h4>
-                <h4>2:00 PM : 88</h4>
-                <h4>3:00 PM : 90</h4>
-                <h4>4:00 PM : 90</h4>
-                <h4>5:00 PM : 85</h4>
-                <h4>6:00 PM : 83</h4>
-                <h4>7:00 PM : 79</h4>
-                <h4>8:00 PM : 74</h4>
+            <div class="hourbody">
+                <ul>
+                    <li>8:00 AM : 74</li>
+                    <li>9:00 AM : 77</li>
+                    <li>10:00 AM : 79</li>
+                    <li>11:00 AM : 81</li>
+                    <li>12:00 PM : 84</li>
+                    <li>1:00 PM : 86</li>
+                    <li>2:00 PM : 88</li>
+                    <li>3:00 PM : 90</li>
+                    <li>4:00 PM : 90</li>
+                    <li>5:00 PM : 85</li>
+                    <li>6:00 PM : 83</li>
+                    <li>7:00 PM : 79</li>
+                    <li>8:00 PM : 74</li>
+                </ul>
             </div>
         </div>
     </main>

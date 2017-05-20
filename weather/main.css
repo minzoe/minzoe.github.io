@@ -18,6 +18,44 @@ figure {
 body {
     margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
     padding: 0;  /* ditto for padding  */
-    background-color: salmon;    
+    background-color: salmon;
+    padding-bottom: 20px;
 }
-                    
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    line-height: 20px;
+}
+
+ul li {
+    list-style: none;
+    padding: .5em;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.title h1 + h1 {
+    text-align: right;
+    margin-top: -.7em;
+}
+
+.subtown {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.townweather, .iconhide, .hourly{
+   display: none;
+}
