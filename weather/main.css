@@ -19,7 +19,7 @@ body {
     margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
     padding: 0;  /* ditto for padding  */
     background-color: salmon;
-    padding-bottom: 20px;
+    padding-bottom: 1em;
 }
 
 main {
@@ -31,11 +31,12 @@ main {
 nav ul {
     display: flex;
     line-height: 20px;
+    padding: 0px;
 }
 
 ul li {
     list-style: none;
-    padding: .5em;
+    padding: 0.25em;
 }
 
 nav {
