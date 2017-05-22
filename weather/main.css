@@ -32,11 +32,12 @@ nav ul {
     display: flex;
     line-height: 20px;
     padding: 0px;
+    justify-content: space-between;
 }
 
 ul li {
     list-style: none;
-    padding: 0.25em;
+    
 }
 
 nav {
