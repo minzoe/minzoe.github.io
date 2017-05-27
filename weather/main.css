@@ -33,11 +33,11 @@ nav ul {
     line-height: 20px;
     padding: 0px;
     justify-content: space-between;
+    margin: .5em;
 }
 
 ul li {
-    list-style: none;
-    
+    list-style: none;    
 }
 
 nav {
@@ -45,6 +45,7 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: #F07C6C;
 }
 
 .title h1 + h1 {
@@ -60,4 +61,61 @@ nav {
 
 .townweather, .iconhide, .hourly{
    display: none;
+}
+body {
+    font-family: Helvetica;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Sansita;
+}
+
+.center {
+    text-align: center;
+}
+
+header, footer {
+    background-color: #A6D8DB;
+}
+a:link {
+    color: #47556F;
+}
+
+a:visited {
+    color: #47556F;
+}
+
+a:hover {
+    color: #E7EF61;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #A6D8DB;
+    text-decoration: underline;
+}
+
+main {
+    background-image: url(http://lorempixel.com/400/400/nature);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main > div {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: .4em;
+}
+.title > h1 {
+    margin: 0px;
+    padding: .2em;
+}
+
+.rotate {
+    display: inline-block;
+    transform: rotate(20deg);
+    margin-left: -.2em;
 }

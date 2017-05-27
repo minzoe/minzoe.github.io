@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    /* changes width property to total width instead of content width */
+}
+
+header {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+#gallery {
+    margin: 1em;
+}
+
+#gallerylist {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px;
+}
+
+#gallerylist li {
+    width: 20%;
+    margin: 1em;
+}
+
+.galleryimage,
+.gallerycaption {
+    width: 100%;
+}
+
+nav ul>li {
+    display: inline;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+#imgscroll {
+    width: 100%;
+}
+
+#scroll {
+    position: relative;
+}
+
+#textscroll {
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    top: 35%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0 2em;
+}
+
+
