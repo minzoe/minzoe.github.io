@@ -1,6 +1,6 @@
 * {
- box-sizing: border-box;    /* changes width property to total width instead of content width */
-
+    box-sizing: border-box;
+    /* changes width property to total width instead of content width */
 }
 
 article,
@@ -12,12 +12,15 @@ section,
 main,
 figcaption,
 figure {
-  display: block;   /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+    display: block;
+    /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
 }
 
 body {
-    margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
-    padding: 0;  /* ditto for padding  */
+    margin: 0;
+    /* remove any margin from body to avoid unsightly gaps. */
+    padding: 0;
+    /* ditto for padding  */
     background-color: salmon;
     padding-bottom: 3.5em;
 }
@@ -26,6 +29,9 @@ main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    background-image: url(http://lorempixel.com/400/400/nature);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 nav ul {
@@ -37,7 +43,7 @@ nav ul {
 }
 
 ul li {
-    list-style: none;    
+    list-style: none;
 }
 
 nav {
@@ -48,7 +54,7 @@ nav {
     background-color: #F07C6C;
 }
 
-.title h1 + h1 {
+.title h1+h1 {
     text-align: right;
     margin-top: -.7em;
 }
@@ -59,25 +65,35 @@ nav {
     justify-content: space-between;
 }
 
-.townweather, .iconhide, .hourly{
-   display: none;
+.townweather,
+.iconhide,
+.hourly {
+    display: none;
 }
+
 body {
     font-family: Helvetica;
     font-size: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Sansita;
 }
 
-.center {
+.concenter, frankcenter {
     text-align: center;
 }
 
-header, footer {
+header,
+footer {
     background-color: #A6D8DB;
 }
+
 a:link {
     color: #47556F;
 }
@@ -96,20 +112,15 @@ a:active {
     text-decoration: underline;
 }
 
-main {
-    background-image: url(http://lorempixel.com/400/400/nature);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-main > div {
-    background-color: rgba(200,200,200,.6);
+main>div {
+    background-color: rgba(200, 200, 200, .6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
     padding: .4em;
 }
-.title > h1 {
+
+.title>h1 {
     margin: 0px;
     padding: .2em;
 }
@@ -118,4 +129,86 @@ main > div {
     display: inline-block;
     transform: rotate(20deg);
     margin-left: -.2em;
+}
+
+@media screen and (min-width: 34em) {
+    .title {
+        width: 20em;
+    }
+    .hourly {
+        display: initial;
+    }
+    main {
+        flex-direction: row;
+        align-items: stretch;
+        background-image: none;
+    }
+    main>.current,
+    main>.town,
+    main>.hourly {
+        flex: 1 0 30%;
+    }
+    nav {
+        position: static;
+    }
+    nav > ul {
+        padding-top: .5em;
+    }
+    .current,
+    .town,
+    .hourly {
+        border-radius: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: .5em;
+    }
+    .iconhide {
+        display: initial;
+    }
+    .townweather {
+        display: initial;
+        text-align: center;
+    }
+    .townweather > h3 {
+        margin: 0.5em;
+    }
+    .townbody {
+        background-image: url(http://lorempixel.com/400/400/nature);
+        background-repeat: no-repeat;
+        padding: 0.9em .5em;
+        height: 6em;
+    }
+    .town,
+    .hourly {
+        order: 1;
+    }
+    .hourbody ul li {
+        display: flex;
+        justify-content: space-around;
+    }
+    .hourbody ul li span {
+        padding-right: 1em;
+    }
+    .hourbody > ul {
+        list-style-type: none;
+        padding-left: 0px;
+        margin: 0;
+    }
+    .hourly {
+        overflow: auto;
+        max-height: 14em;
+    }
+    body {
+        width: 80%;
+        max-width: 800px;
+        margin: auto;
+    }
+    .townbody > h2 {
+        margin: 0em;
+    }
+    .subtown {
+        height: 1em;
+    }
 }
