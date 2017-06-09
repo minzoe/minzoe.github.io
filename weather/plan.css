@@ -1,0 +1,56 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster+Two:400i');
+
+.header-font {
+    font-family: 'Lobster Two', cursive;
+}
+
+.body-font {
+    font-family: 'Lato', sans-serif;
+    }
+/* Colors */
+.color-primary-0 { color: #39A09C }	/* Main Primary color */
+.color-primary-1 { color: #93DCD9 }
+.color-primary-2 { color: #5EBEBB }
+.color-primary-3 { color: #21908C }
+.color-primary-4 { color: #0C7874 }
+
+.color-secondary-1-0 { color: #FFED5B }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #FFF5AA }
+.color-secondary-1-2 { color: #FFF17E }
+.color-secondary-1-3 { color: #EDD836 }
+.color-secondary-1-4 { color: #C6B214 }
+
+.color-secondary-2-0 { color: #B23FA8 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #E397DC }
+.color-secondary-2-2 { color: #CA64C2 }
+.color-secondary-2-3 { color: #A12596 }
+.color-secondary-2-4 { color: #870E7C }
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.color-swatch {
+    border: 1px solid;
+    border-radius: 10px;
+    flex: 0 1 25%;
+}
+.color-swatch__color {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+}
+.color-swatch__primary {
+    background-color: #39A09C;
+}
+.color-swatch__secondary {
+    background-color: #FFED5B;
+}
+.color-swatch__accent {
+    background-color: #B23FA8;
+}
+.color-swatch__description {
+    padding: .5em;
+}
