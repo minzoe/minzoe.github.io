@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Responsive Images example | CIT 230 class | Frontend development</title>
+        <meta name="description" content="Example site for learning how to use srcset, sizes, and picture" />
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body {
+                max-width: 1600px;
+                margin: auto;
+            }
+            img {
+                max-width: 100%;
+            }
+            .media-box {
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .media-box picture {
+                flex: 1 1 400px;
+                
+            }
+            .media-box img {
+/*                width: 100%;*/
+            }
+            .media-box > div {
+                flex: 1 1 50vw;
+            }
+            
+        </style>
+    </head>
+    <body>
+       <header>
+           <h1>Responsive Images</h1>
+           <nav>
+               <ul>
+                   <li><a href="index.html">Home</a> </li>
+                   
+               </ul>
+           </nav>
+       </header>
+       <main>
+        <!-- image 1 -->
+         <figure>
+             <img src="images/image-1-canyon-sq.jpg" alt="Grand canyon river shot" srcset="images/image-1-canyon-sq-400.jpg 400w, images/image-1-canyon-sq-800.jpg 800w, images/image-1-canyon-sq-1600.jpg 1600w)">
+             <figcaption>Image 1: a Grand Canyon Colorado river shot</figcaption>
+         </figure>
+         <!--Image 2 -->
+          <section class="media-box">
+              <picture>
+                                       
+                  <img src="images/image-2-little-colorado.jpg" alt="The Little Colorado River" >
+              </picture>
+              <div><h2>The Little Colorado</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc lorem, viverra quis laoreet a, ullamcorper ut turpis. In aliquam diam turpis, ut tincidunt orci volutpat nec. Maecenas velit arcu, pellentesque ut faucibus at, egestas in felis. Aenean molestie venenatis sodales. Vivamus sodales orci sed magna posuere volutpat. Integer at neque risus. Proin metus arcu, cursus in massa sit amet, fermentum placerat quam. Nam vitae arcu felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla tincidunt dignissim neque vitae varius. Vivamus pellentesque magna quis nisi luctus, vitae aliquet magna bibendum. Vestibulum ante ipsum primis.</p>
+              </div>
+          </section>
+       </main>
+       <footer>
+           &copy; 2017 Bro Thompson
+       </footer>
+        
+    </body>
+    
+</html>
