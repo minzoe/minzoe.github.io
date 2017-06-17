@@ -1,0 +1,227 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster+Two:400i');
+
+/* Header */
+
+/*
+font-family: 'Lobster Two',
+cursive;
+*/
+
+/* Body */
+
+/*
+font-family: 'Lato',
+sans-serif;
+*/
+
+/* Colors */
+
+
+/* Primary */
+
+/*color: #39A09C;*/
+
+/* Secondary */
+
+/*color: #FFED5B;*/
+
+/* Accent */
+
+/*color: #B23FA8;*/
+
+/* CSS */
+
+* {
+    box-sizing: border-box;
+    /* changes width property to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+
+h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2em;
+}
+
+body {
+    margin: 0;
+    /* remove any margin from body to avoid unsightly gaps. */
+    padding: 0;
+    /* ditto for padding  */
+    padding-bottom: 3.5em;
+    font-family: 'Lato', sans-serif;
+    background-image: url(http://lorempixel.com/800/700/nature);
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 2em;
+}
+
+#title {
+    padding: .5em;
+    background-color: #39A09C;
+    height: 5em;
+}
+
+#title h1 {
+    margin: 0;
+}
+
+#title h2 {
+    text-align: right;
+    margin: 0;
+}
+
+#green {
+    display: flex;
+    align-content: center;
+    flex-flow: column nowrap;
+    border: 2px solid #B23FA8;
+    border-radius: 5px;
+    padding: .5em;
+    text-align: center;
+    margin: 1em;
+    background-color: #FFED5B;
+}
+
+#green>* {
+    margin: .5em;
+}
+
+#navmenu {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    padding: .5em;
+    background-color: #B23FA8;
+    margin: 0;
+    text-align: center;
+}
+
+#himg {
+    display: inline-block;
+    transform: rotateY(150deg);
+    width: 35px;
+    height: 25px;
+}
+
+footer {
+    background-color: #39A09C;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#current {
+    display: flex;
+    align-content: center;
+    flex-flow: column nowrap;
+    border: 2px solid #B23FA8;
+    border-radius: 5px;
+    padding: .5em;
+    text-align: center;
+    margin: 1em;
+    background-color: #FFED5B;
+}
+
+#current>* {
+    margin: .5em;
+}
+
+#hour {
+    display: flex;
+    align-content: center;
+    flex-flow: column nowrap;
+    border: 2px solid #B23FA8;
+    border-radius: 5px;
+    padding: .5em;
+    background-color: #FFED5B;
+    display: none;
+}
+
+@media screen and (min-width: 50em) {
+    #title>section {
+        width: 20em;
+    }
+    #current, #green {
+        background-color: initial;
+        border: initial;
+        color: white;
+    }
+    body {
+        background-image: none;
+    }
+    #navmenu {
+        position: initial;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin: 0;
+    }
+    #content {
+        border: 2px solid #B23FA8;
+        border-radius: 5px;
+        padding: .5em;
+        background-image: url(http://lorempixel.com/1500/700/nature);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        
+    }
+    #hour {
+        display: flex;
+        flex-flow: column nowrap;
+        position: fixed;
+        top: 450px;
+        left: 0;
+        right: 0;
+        height: 190px;
+    }
+    #hour > ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 0;
+        margin: 0;
+    }
+    #hour ul li {
+        padding: .5em;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #hour ul li span {
+        display: flex;
+        justify-content: center;
+    }
+    main {
+        padding: 0;
+    }
+    #navmenu li a {
+    color: black;
+    text-decoration-line: none;
+}
+}
