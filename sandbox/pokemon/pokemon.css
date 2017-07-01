@@ -1,0 +1,51 @@
+body {
+    background-color: cadetblue;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 1em;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+h1 {
+    color: midnightblue;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: none;
+    list-style: none;
+    max-width: 600px;
+    padding: 0;
+}
+
+li {
+    width: 4em;
+    text-align: center;
+    border: .5px solid black;
+    padding: .5em;
+    margin-right: .1em;
+    margin-bottom: .1em;
+}
+
+.listbox {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#displaybox {
+    background-color: lightslategrey;
+    border: 2px solid black;
+    padding: .5em;
+    max-width: 600px;
+}
+
+footer {
+    position: absolute;
+    left: 20;
+    bottom: 0;
+}
