@@ -169,6 +169,7 @@ footer {
     }
     body {
         background-image: none;
+        background-color: #B23FA8;
     }
     #navmenu {
         position: initial;
@@ -181,13 +182,14 @@ footer {
         border: 2px solid #B23FA8;
         border-radius: 5px;
         padding: .5em;
-        background-image: url(http://lorempixel.com/1500/700/nature);
+        background-image: url(http://lorempixel.com/1500/1000/nature);
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         position: fixed;
         left: 0;
         right: 0;
+        height: 51%;
         
     }
     #hour {
@@ -197,7 +199,7 @@ footer {
         top: 450px;
         left: 0;
         right: 0;
-        height: 250px;
+        height: 28.5%;
     }
     #hour > ul {
         list-style: none;

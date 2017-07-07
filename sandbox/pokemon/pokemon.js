@@ -8,7 +8,7 @@ function getJSON(url) {
         });
 }
 
-function fetchType() {
+function fetchType(url = "//pokeapi.co/api/v2/type/") {
     var url = "//pokeapi.co/api/v2/type/";
     //call getJSON function to get the list of ships from the api
     getJSON(url).then(function (data) {
@@ -29,7 +29,21 @@ function fetchType() {
                 event.preventDefault();
                 getTypeDetails(type.url);
             });
-        })
+        });
+        var prev = document.getElementById('prev');
+            
+            prev.setAttribute('href', data.prev);
+            prev.addEventListener("click", function (e) {
+                e.preventDefault();
+                getTypeDetails(data.prev);
+            });
+        var next = document.getElementById('next');
+            
+            next.setAttribute('href', data.next);
+            next.addEventListener("click", function (e) {
+                e.preventDefault();
+                getTypeDetails(data.next);
+            });
     });
 }
 

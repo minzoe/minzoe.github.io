@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Weather | Greenville | Frontend Development</title>
+    <title>Weather | Home | Frontend Development</title>
     <meta name="description" content="Wireframe for the Franklin weather page">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="gstyles.css">
 </head>
-
+<!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Zoe Miner
+* 2. Kienen Kotter
+* 3.
+* 4.
+* 5.
+* ******************************************** -->
 <body>
     <header>
         <section id="title">
@@ -42,15 +49,14 @@
         <section id="content">
         <!-- Greenville Weather -->
         <section id="green">
-            <h3>Greenville, ID</h3>
-            <p>79</p>
-            <p>90/66</p>
+            <h3 id="cityDisplay"></h3>
+            <p id="currentTemp"></p>
         </section>
         <!-- Current Conditions Div -->
         <section id="current">
             <h3>Current Conditions</h3>
-            <p>Wind: 1-5 MPH Southwest</p>
-            <p>Precipitation: 0in</p>
+            <p>Wind: <span id='wind'></span></p>
+            <p>Precipitation: <span id='precip'></span></p>
         </section>
         </section>
         <!-- Hourly Forcast -->
@@ -75,6 +81,7 @@
     </main>
     <footer>
         &copy; 2017 Zoe Miner <a href="/index.html">Home</a>
+        <script src="javascript/weather.js"></script>
     </footer>
 </body>
 
