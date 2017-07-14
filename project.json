@@ -1,0 +1,66 @@
+{
+    "see": [{
+        "civil": {
+            "place": "Civil War Museum",
+            "description": "A small museum dedicated to showing the local remnants of the Civil War.",
+            "address": "Main Street",
+            "hours": "9 - 5",
+            "phone": "417 359"
+        },
+        "precious": {
+            "place": "Precious Moments Chapel",
+            "description": "A sweent museum and chapel dedicated to the work of Sam Butcher.",
+            "address": "Chapel Road",
+            "hours": "9 - 5",
+            "phone": "417 359"
+        }
+}],
+    "do": [{
+        "route": {
+            "place": "Route 66 Drive-in",
+            "description": "A fun summer activity, enjoy the watching a movie under the beautiful night sky.",
+            "address": "Route 66",
+            "hours": "9 - 5",
+            "phone": "417 359"
+        },
+        "library": {
+            "place": "Carthage Public Library",
+            "description": "Browse the collection offered by our local library. Also check out what summer activities they have.",
+            "address": "Garrison",
+            "hours": "9 - 5",
+            "phone": "417 359"
+        }
+  }],
+    "eat": [{
+        "oriental": {
+            "place": "Oriental Villa",
+            "description": "Enjoy a chinese buffet with many varieties.",
+            "address": "Garrison",
+            "hours": "9 - 5",
+            "phone": "417 359"
+        },
+        "iggy": {
+            "place": "Iggy's Diner",
+            "description": "Delicious american diner, true comfort food.",
+            "address": "Airport",
+            "hours": "9 - 5",
+            "phone": "417 359"
+        }
+  }],
+    "stay": [{
+        "boots": {
+            "place": "Boot's Motel",
+            "description": "Historic motel",
+            "address": "Garrison",
+            "hours": "9 - 5",
+            "phone": "417 359"
+        },
+        "super": {
+            "place": "Super 8",
+            "description": "Simple Comfortable",
+            "address": "Fir",
+            "hours": "9 - 5",
+            "phone": "417 359"
+        }
+  }]
+}

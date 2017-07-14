@@ -1,0 +1,110 @@
+/*
+Primary: #b46125
+Secondary: #FF8300
+Accent: #c41700
+*/
+
+@import url('https://fonts.googleapis.com/css?family=El+Messiri|Open+Sans');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "El Messiri", cursive;
+}
+
+p {
+    font-family: "Open Sanas", sans-serif;
+}
+
+body {
+    justify-content: center;
+    text-align: center;
+    background-color: #95491a;
+    margin-left: 4em;
+    min-width: 390px;
+}
+
+#logo {
+    width: 1em;
+    transform: translateY(.5em);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #c41700;
+    display: flex;
+    justify-content: space-around;
+    width: 4em;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+a {
+    color: #FF8300;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#display {
+    background-color: #FF8300;
+    padding: 1em;
+    padding-top: 0.1em;
+    width: 50%;
+    border: 5px solid black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #c41700;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 32em) {
+    nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: auto;
+        background-color: #c41700;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: auto;
+    }
+    
+    nav ul {
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: #c41700;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+}

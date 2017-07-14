@@ -3,39 +3,47 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Temporary Home Page | CIT 230 | Frontend Development</title>
-    <meta name="description" content="Short description of the site">
+    <title>Carthage Highlights | What To Do In Carthage</title>
+    <meta name="description" content="A site to offer suggestions of things to see, do or eat in Carthage, MO. Created as a final project for my web frontend development class.">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Temporary Home Page</h1>
+        <h1>Carthage <img id="logo" src="carthage.png"> Highlights</h1>
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="#">Home</a></li>
+                <li><a href="#">See</a></li>
+                <li><a href="#">Do</a></li>
+                <li><a href="">Eat</a></li>
+                <li><a href="">Stay</a>
                 </li>
-                <li>
-                    <a href="/homework/mobile-analysis.html">Mobile Analysis</a>
-                </li>
-                <li><a href="weather/weather-plan.html">Site Plan</a></li>
-                <li><a href="/weather/weather-wireframe.html">Franklin</a></li>
-                 <li><a href="/homework/projectplan.html">Project Plan</a></li>
-                <li><a href="homework/resnavbar.html">Responsive Nav Bar</a></li>
-                <li><a href="weather/greenville.html">Greenville</a></li>
-                <li><a href="sandbox/adventure.html">Choose Your Own Adventure</a></li>
-                <li><a href='sandbox/pokemon/pokemon.html'>Pokemon API</a></li>
-                <li><a href="jsonweather-html/index.html">Weather API</a></li>
-                <li><a href="weather/index.html">Weather Home Page</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section>
+        <h2>Welcome</h2>
+        <p>Carthage is a rural town located in southwestern Missouri. It is known for its Civil War significance and for its place along the historic Route 66. It is a welcoming town that blends history and modern, straight-forward life together.</p>
+        </section>
+        <section id="display">
+            <h3>Random Generator</h3>
+            <h4 id="category"></h4>
+            <p>Place: <span id="place"></span></p>
+            <p>Description: <span id="desc"></span></p>
+            <p>Address: <span id="add"></span></p>
+            <p>Hours: <span id="hours"></span></p>
+            <p>Phone: <span id="phone"></span></p>
+            <button onclick="pickRandom();">New Place</button>
+        </section>
     </main>
     <footer>
-        &copy;2017 Zoe Miner
+        2017 | Zoe Miner | <a href="homework/projectplan.html">Project Plan</a>
     </footer>
+     <script src="project.js"></script>
 </body>
 
 </html>
