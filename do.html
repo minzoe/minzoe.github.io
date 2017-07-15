@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body>
+<body onload="pickSelect(1);">
     <header>
         <h1>Carthage <img id="logo" src="carthage.png" alt="Maple Leaf"> Highlights</h1>
         <nav>
@@ -26,21 +26,21 @@
     </header>
     <main>
         <section>
-        <h2>Welcome to Carthage</h2>
-        <p>Carthage is a rural town located in southwestern Missouri. It is known for its Civil War significance and for its place along the historic Route 66. It is a welcoming town that blends history and modern, straight-forward life together.</p>
+        <h2>Things to Do</h2>
+        <p>Enjoy some of the activities this town has to offer.</p>
         </section>
         <section id="display">
-            <h3>Random Generator</h3>
             <p>Place: <span id="place"></span></p>
             <p>Description: <span id="desc"></span></p>
             <p>Address: <span id="add"></span></p>
             <p>Hours: <span id="hours"></span></p>
             <p>Phone: <span id="phone"></span></p>
-            <button onclick="pickRandom();">New Place</button>
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
         </section>
     </main>
     <footer>
-        2017 | Zoe Miner | <a href="homework/projectplan.html">Project Plan</a> | <a href="temphome.html">Homework</a>
+        2017 | Zoe Miner | <a href="homework/projectplan.html">Project Plan</a>
     </footer>
      <script src="project.js"></script>
 </body>

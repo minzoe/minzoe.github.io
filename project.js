@@ -13,31 +13,59 @@ function getData() {
     var url = "project.json";
     getJSON(url).then(function (data) {
         console.log(data);
-        displayDetails();
     });
+}
 
+function pickSelect(i) {
+    getJSON("project.json").then(function (data) {
+        var y = 0;
+        var list = data[i];
+        var obj = list[y];
+        console.log(obj);
+        displayDetails(obj);
 
+        var prev = document.getElementById('prev');
+        prev.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (y > 0) {
+                y = y - 1;
+                console.log(y);
+                obj = list[y];
+                displayDetails(obj);
+            } else {
+                document.getElementById('place').innerHTML = "The Begining";
+                document.getElementById('desc').innerHTML = "";
+                 document.getElementById('add').innerHTML = ""; document.getElementById('hours').innerHTML = ""; document.getElementById('phone').innerHTML = "";
+                y = -1;
+            }
+        });
+
+        var next = document.getElementById('next');
+        next.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (y < list.length - 1) {
+                y = y + 1;
+                console.log(y);
+                obj = list[y];
+                displayDetails(obj);
+            } else {
+                document.getElementById('place').innerHTML = "End";
+                document.getElementById('desc').innerHTML = "";
+                 document.getElementById('add').innerHTML = ""; document.getElementById('hours').innerHTML = ""; document.getElementById('phone').innerHTML = "";
+                y = list.length;
+            }
+        })
+    })
 }
 
 function pickRandom() {
     getJSON("project.json").then(function (data) {
+
+        var ranTopic = data[Math.floor(Math.random() * data.length)];
         
-        var obj_keys = Object.keys(data);
-        var ran_key = obj_keys[Math.floor(Math.random() * obj_keys.length)];
-        randomSelect = data[ran_key];
-        console.log(randomSelect);
-
-        var n_obj_keys = Object.keys(randomSelect);
-        var n_ran_key = n_obj_keys[Math.floor(Math.random() * n_obj_keys.length)];
-        nRandomSelect = randomSelect[n_ran_key];
-        console.log(nRandomSelect);
-
-        var z_obj_keys = Object.keys(nRandomSelect);
-        var z_ran_key = z_obj_keys[Math.floor(Math.random() * z_obj_keys.length)];
-        zRandomSelect = nRandomSelect[z_ran_key];
-        console.log(zRandomSelect);
-
-        displayDetails(zRandomSelect);
+        var ranSelect = ranTopic[Math.floor(Math.random() * ranTopic.length)];
+        
+        displayDetails(ranSelect);
     });
 }
 

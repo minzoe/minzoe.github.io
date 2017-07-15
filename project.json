@@ -1,66 +1,66 @@
-{
-    "see": [{
-        "civil": {
+[
+    [
+        {
             "place": "Civil War Museum",
             "description": "A small museum dedicated to showing the local remnants of the Civil War.",
-            "address": "Main Street",
-            "hours": "9 - 5",
-            "phone": "417 359"
+            "address": "205 South Grant Street",
+            "hours": "Tue-Sat 8:30-5",
+            "phone": "417-237-7060"
         },
-        "precious": {
+        {
             "place": "Precious Moments Chapel",
-            "description": "A sweent museum and chapel dedicated to the work of Sam Butcher.",
+            "description": "A sweet museum and chapel dedicated to the work of Sam Butcher.",
             "address": "Chapel Road",
-            "hours": "9 - 5",
-            "phone": "417 359"
+            "hours": "9:00am - 5:00 pm",
+            "phone": "1-800-543-7975"
         }
-}],
-    "do": [{
-        "route": {
+],
+    [
+        {
             "place": "Route 66 Drive-in",
             "description": "A fun summer activity, enjoy the watching a movie under the beautiful night sky.",
-            "address": "Route 66",
-            "hours": "9 - 5",
-            "phone": "417 359"
+            "address": "17231 Old 66 Boulevard ",
+            "hours": "Box Office Opens at 7:30 p.m.  Showtime 9:10 p.m.",
+            "phone": "417-359-5959"
         },
-        "library": {
+        {
             "place": "Carthage Public Library",
             "description": "Browse the collection offered by our local library. Also check out what summer activities they have.",
-            "address": "Garrison",
-            "hours": "9 - 5",
-            "phone": "417 359"
+            "address": "612 S Garrison Ave",
+            "hours": "9:00am - 4:00pm",
+            "phone": "417-237-7040"
         }
-  }],
-    "eat": [{
-        "oriental": {
+  ],
+    [
+        {
             "place": "Oriental Villa",
-            "description": "Enjoy a chinese buffet with many varieties.",
-            "address": "Garrison",
-            "hours": "9 - 5",
-            "phone": "417 359"
+            "description": "Enjoy a chinese buffet with a wide selection.",
+            "address": "2334 Fairlawn Dr",
+            "hours": "11:00 am - 9:00 pm",
+            "phone": "(417) 358-1809"
         },
-        "iggy": {
+        {
             "place": "Iggy's Diner",
             "description": "Delicious american diner, true comfort food.",
-            "address": "Airport",
-            "hours": "9 - 5",
-            "phone": "417 359"
+            "address": "2400 Grand Ave",
+            "hours": "Breakfast 6:00 AM - 10:30 AM Lunch & Dinner Mon - Sat 10:30 AM - 8:00 PM Summer till 9:00 PM Sunday till 3 PM",
+            "phone": "417-237-0212"
         }
-  }],
-    "stay": [{
-        "boots": {
-            "place": "Boot's Motel",
-            "description": "Historic motel",
-            "address": "Garrison",
-            "hours": "9 - 5",
-            "phone": "417 359"
+  ],
+    [
+        {
+            "place": "Boots Motel",
+            "description": "Restored historic motel right along the Route 66 Motheroad.",
+            "address": "107 S. Garrison Avenue",
+            "hours": "9:00am - 9:00pm",
+            "phone": "(417) 310-2989"
         },
-        "super": {
-            "place": "Super 8",
-            "description": "Simple Comfortable",
-            "address": "Fir",
-            "hours": "9 - 5",
-            "phone": "417 359"
+        {
+            "place": "Super 8 Motel",
+            "description": "Easy access to shopping, restaurants, businesses, and sports areas",
+            "address": "416 W Fir Rd",
+            "hours": "Check in 2:00 PM Check out 11:00 AM",
+            "phone": "417-359-9000"
         }
-  }]
-}
+  ]
+]

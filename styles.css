@@ -1,7 +1,7 @@
 /*
-Primary: #b46125
-Secondary: #FF8300
-Accent: #c41700
+Primary: #BCB29A
+Secondary: #EA9029
+Accent: #A22C34
 */
 
 @import url('https://fonts.googleapis.com/css?family=El+Messiri|Open+Sans');
@@ -21,7 +21,7 @@ p {
 body {
     justify-content: center;
     text-align: center;
-    background-color: #95491a;
+    background-color: #BCB29A;
     margin-left: 4em;
     min-width: 390px;
 }
@@ -41,17 +41,18 @@ nav {
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: #c41700;
     display: flex;
     justify-content: space-around;
     width: 4em;
 }
 
 nav ul {
+    background-color: #A22C34;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     padding: 1em;
+    margin: 0;
 }
 
 nav ul li {
@@ -66,10 +67,11 @@ main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    padding: 1em;
 }
 
 #display {
-    background-color: #FF8300;
+    background-color: #EA9029;
     padding: 1em;
     padding-top: 0.1em;
     width: 50%;
@@ -79,32 +81,30 @@ main {
 footer {
     position: fixed;
     bottom: 0;
-    background-color: #c41700;
+    background-color: #A22C34;
     left: 0;
     right: 0;
 }
 
 @media screen and (min-width: 32em) {
-    nav {
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: auto;
-        bottom: auto;
-        background-color: #c41700;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        width: auto;
+    body {
+        margin: 0;
     }
-    
-    nav ul {
-        position: fixed;
-        left: 0;
-        right: 0;
-        background-color: #c41700;
+    nav {
+        position: initial;
+        width: 100%;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-around;
+        justify-content: center;
+    }
+    nav ul {
+        padding: .75em;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    nav ul li {
+        display: flex;
+        align-content: center;
     }
 }
